@@ -1,0 +1,52 @@
+{
+  "name": "react-fake-list",
+  "description": "React component for rendering and scrolling large lists. Aims to be easy to use and performant enough solution.",
+  "version": "0.0.0",
+  "main": "lib/react-fake-list.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmytromushenko/react-fake-list.git"
+  },
+  "keywords": [
+    "react",
+    "virtual",
+    "list"
+  ],
+  "author": "Dmytro Mushenko <dmytro.mushenko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmytromushenko/react-fake-list/issues"
+  },
+  "homepage": "https://github.com/dmytromushenko/react-fake-list#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.3.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "build:lib": "webpack",
+    "build:example": "(cd example; webpack)",
+    "build": "npm run build:lib && npm run build:example",
+    "prepublish": "npm run build",
+    "start": "(cd example; webpack-dev-server)"
+  }
+}
