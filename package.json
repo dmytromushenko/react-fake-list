@@ -7,6 +7,10 @@
     "example": "example",
     "lib": "lib"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmytromushenko/react-fake-list.git"
@@ -43,9 +47,8 @@
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "build:lib": "webpack",
+    "build": "webpack",
     "build:example": "(cd example; webpack)",
-    "build": "npm run build:lib && npm run build:example",
     "prepublish": "npm run build",
     "start": "(cd example; webpack-dev-server)"
   }
