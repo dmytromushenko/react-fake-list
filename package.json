@@ -1,7 +1,7 @@
 {
   "name": "react-fake-list",
   "description": "React component for rendering and scrolling large lists. Aims to be easy to use and performant enough solution.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "lib/react-fake-list.js",
   "directories": {
     "example": "example",
